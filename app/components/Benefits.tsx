@@ -65,7 +65,7 @@ export default function Benefits() {
               </div>
               <h3 className="text-xl font-bold text-primary mb-3">Personal Support</h3>
               <p className="text-gray-700">
-                Questions? Need updates? We're here to help. Real people, local service, clear communication.
+                Questions? Need updates? We&apos;re here to help. Real people, local service, clear communication.
               </p>
             </div>
 

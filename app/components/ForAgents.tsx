@@ -23,7 +23,7 @@ export default function ForAgents() {
             <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
               <h3 className="text-xl font-bold mb-3">Reduce Post-Closing Calls</h3>
               <p className="text-blue-100">
-                Fewer "Who do I call for electricity?" questions. We handle the details so you can focus on your next transaction.
+                Fewer &quot;Who do I call for electricity?&quot; questions. We handle the details so you can focus on your next transaction.
               </p>
             </div>
 
