@@ -15,7 +15,7 @@ export default function Hero() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="https://forms.google.com/placeholder" 
+              href="https://forms.gle/k1NiYMuua418LF1K9" 
               className="btn-primary"
               target="_blank"
               rel="noopener noreferrer"

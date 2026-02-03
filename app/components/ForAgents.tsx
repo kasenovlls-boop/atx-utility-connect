@@ -49,7 +49,7 @@ export default function ForAgents() {
             </p>
             <div className="text-center">
               <a 
-                href="https://forms.google.com/placeholder" 
+                href="https://forms.gle/MFyqZRXmeA7CTRUp6" 
                 className="inline-block bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-lg transition-colors duration-200"
                 target="_blank"
                 rel="noopener noreferrer"

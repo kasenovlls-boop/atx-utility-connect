@@ -65,7 +65,7 @@ export default function Trust() {
               We're happy to walk you through our process and answer any concerns.
             </p>
             <a 
-              href="https://forms.google.com/placeholder" 
+              href="https://forms.gle/k1NiYMuua418LF1K9" 
               className="btn-primary"
               target="_blank"
               rel="noopener noreferrer"
