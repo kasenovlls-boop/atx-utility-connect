@@ -11,7 +11,7 @@ export default function Problem() {
           </p>
           <div className="bg-gray-50 rounded-lg p-8 mt-10">
             <p className="text-lg text-gray-800 mb-4 font-medium">
-              Between closing day and move-in, you're juggling:
+              Between closing day and move-in, you&apos;re juggling:
             </p>
             <ul className="text-left text-gray-700 space-y-3 max-w-xl mx-auto">
               <li className="flex items-start">
@@ -32,7 +32,7 @@ export default function Problem() {
               </li>
             </ul>
             <p className="text-lg text-gray-800 mt-6 font-medium">
-              It's overwhelming—and it takes time you don't have.
+              It&apos;s overwhelming—and it takes time you don&apos;t have.
             </p>
           </div>
         </div>

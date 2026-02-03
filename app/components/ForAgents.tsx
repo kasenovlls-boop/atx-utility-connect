@@ -45,7 +45,7 @@ export default function ForAgents() {
           <div className="bg-white/5 rounded-lg p-8 backdrop-blur-sm border border-white/20">
             <h3 className="text-2xl font-bold mb-4 text-center">Partner With Us</h3>
             <p className="text-blue-100 mb-6 text-center max-w-2xl mx-auto">
-              Whether you have one client or a full roster of closings, we're here to make the transition smoother for everyone.
+              Whether you have one client or a full roster of closings, we&apos;re here to make the transition smoother for everyone.
             </p>
             <div className="text-center">
               <a 
