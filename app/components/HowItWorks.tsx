@@ -3,12 +3,9 @@ export default function HowItWorks() {
     <section id="how-it-works" className="bg-white">
       <div className="section-container">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">
             How It Works
           </h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            Simple, straightforward, and stress-free
-          </p>
 
           <div className="space-y-8">
             <div className="flex flex-col md:flex-row items-start gap-6">
@@ -17,10 +14,10 @@ export default function HowItWorks() {
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-primary mb-3">
-                  Tell Us About Your New Home
+                  Tell us what you need help with
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Fill out a simple form with your property address, closing date, and contact information. Let us know which services you need us to coordinate.
+                  Fill out a quick form letting us know what tasks you need handled.
                 </p>
               </div>
             </div>
@@ -31,10 +28,10 @@ export default function HowItWorks() {
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-primary mb-3">
-                  We Handle the Coordination
+                  We handle the coordination
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Our team contacts providers, compares options, fills out paperwork, and schedules installations. We keep you updated every step of the way.
+                  We make the calls, fill out the forms, and schedule the appointments.
                 </p>
               </div>
             </div>
@@ -45,10 +42,10 @@ export default function HowItWorks() {
               </div>
               <div className="flex-1">
                 <h3 className="text-2xl font-bold text-primary mb-3">
-                  Move In with Everything Ready
+                  It&apos;s done — you save time
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Walk into your new Austin home with utilities active, internet installed, and accounts set up. You pay providers directly—we just handle the administrative work.
+                  The task is completed and you can focus on what matters to you.
                 </p>
               </div>
             </div>
@@ -61,7 +58,7 @@ export default function HowItWorks() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Get Started Today
+              Get Help
             </a>
           </div>
         </div>

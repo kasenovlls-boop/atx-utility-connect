@@ -4,14 +4,13 @@ export default function Hero() {
       <div className="section-container">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
-            Your Austin Home is Ready.<br />
-            Let Us Handle the Utilities.
+            We help with the tasks you don&apos;t have time for.
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-            Professional utility and household account setup for new homeowners in Austin, Texas.
+          <p className="text-xl md:text-2xl text-gray-700 mb-4 leading-relaxed max-w-3xl mx-auto">
+            Utility setup, service coordination, admin tasks — we handle the details so you don&apos;t have to.
           </p>
           <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
-            We take care of the paperwork so you can focus on settling into your new home.
+            For people and small businesses in Austin who need help, not risk.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
@@ -20,7 +19,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Get Started
+              Get Help
             </a>
             <a 
               href="#how-it-works" 

@@ -2,37 +2,64 @@ export default function Problem() {
   return (
     <section className="bg-white border-t border-gray-100">
       <div className="section-container">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-            Moving into a New Home is Exciting
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">
+            What We Help With
           </h2>
-          <p className="text-xl text-gray-700 mb-6 leading-relaxed">
-            But dealing with utility companies, account setups, and endless paperwork? Not so much.
-          </p>
-          <div className="bg-gray-50 rounded-lg p-8 mt-10">
-            <p className="text-lg text-gray-800 mb-4 font-medium">
-              Between closing day and move-in, you&apos;re juggling:
-            </p>
-            <ul className="text-left text-gray-700 space-y-3 max-w-xl mx-auto">
-              <li className="flex items-start">
-                <span className="text-accent mr-3 mt-1">•</span>
-                <span>Calling multiple electric providers to compare rates</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 mt-1">•</span>
-                <span>Navigating city water and trash service websites</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 mt-1">•</span>
-                <span>Setting up internet and coordinating installation dates</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-accent mr-3 mt-1">•</span>
-                <span>Registering with your HOA and understanding requirements</span>
-              </li>
-            </ul>
-            <p className="text-lg text-gray-800 mt-6 font-medium">
-              It&apos;s overwhelming—and it takes time you don&apos;t have.
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-gray-50 rounded-lg p-8">
+              <h3 className="text-2xl font-bold text-primary mb-6">
+                For Individuals
+              </h3>
+              <ul className="space-y-4 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-accent mr-3 mt-1">→</span>
+                  <span>Electricity, water, gas, internet setup</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-accent mr-3 mt-1">→</span>
+                  <span>Move-in coordination</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-accent mr-3 mt-1">→</span>
+                  <span>Filling out online forms and accounts</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-accent mr-3 mt-1">→</span>
+                  <span>Scheduling appointments and follow-ups</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-50 rounded-lg p-8">
+              <h3 className="text-2xl font-bold text-primary mb-6">
+                For Small Businesses
+              </h3>
+              <ul className="space-y-4 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-accent mr-3 mt-1">→</span>
+                  <span>Responding to customer messages</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-accent mr-3 mt-1">→</span>
+                  <span>Managing email inbox</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-accent mr-3 mt-1">→</span>
+                  <span>Calendar and scheduling help</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-accent mr-3 mt-1">→</span>
+                  <span>Handling forms and admin tasks</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-10 text-center">
+            <p className="text-lg text-gray-700">
+              We handle coordination and admin work. You stay in control.
             </p>
           </div>
         </div>
