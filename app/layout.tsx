@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.png',
   },
+  verification: {
+    google: 'JIhptyIPV2ICyR98c5vvBV0QS1oUO1AUuyxcn_LuqtQ',
+  },
 };
 
 export default function RootLayout({
@@ -19,9 +22,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta name="google-site-verification" content="JIhptyIPV2ICyR98c5vvBV0QS1oUO1AUuyxcn_LuqtQ" />
-      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
