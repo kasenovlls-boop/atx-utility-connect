@@ -4,7 +4,7 @@ export default function About() {
       <div className="section-container py-12">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-10">
-            Hey, I&apos;m here to help
+            I&apos;m here to help you get settled.
           </h2>
 
           <div className="flex flex-col md:flex-row gap-8 items-center">
@@ -20,13 +20,7 @@ export default function About() {
 
             <div className="md:w-2/3">
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                I started ATX Utility Connect because I kept hearing the same story from friends moving to Austin: "Setting up utilities was a nightmare." Hours on hold, confusing websites, missed appointments.
-              </p>
-              <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                I figured — why not help? I&apos;m good at this kind of stuff. I don&apos;t mind waiting on hold. I actually like organizing things and making sure everything&apos;s set up right.
-              </p>
-              <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                So here we are. This is a small, local operation. Just me helping people in Austin get settled without the admin headaches. Our process is fully automated for your convenience, ensuring your utilities are connected without delay.
+                Hi, I&apos;m your neighbor here in Austin. After helping my own parents navigate the maze of utility portals (watching them struggle with Austin Energy&apos;s website was painful), I realized it shouldn&apos;t be this hard. Now I handle the digital paperwork for my neighbors. No rush, no upselling — just a local who knows these systems inside out.
               </p>
               <div className="flex items-center gap-3 mt-6">
                 <div className="flex-shrink-0">

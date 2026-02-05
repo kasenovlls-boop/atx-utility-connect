@@ -52,7 +52,7 @@ export default function WhatWeDo() {
 
             <div className="mt-8 pt-6 border-t border-gray-200 text-center">
               <p className="text-lg text-gray-800 font-medium">
-                Zero risk. I just make the calls and handle the paperwork.
+                Zero risk. I just navigate the provider portals and handle all the digital paperwork.
               </p>
             </div>
           </div>

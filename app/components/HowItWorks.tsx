@@ -18,9 +18,12 @@ export default function HowItWorks() {
               Pretty straightforward, honestly.
             </p>
 
-            <div className="space-y-6">
-              <div className="flex flex-col md:flex-row items-start gap-5">
-                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-accent to-accent-dark text-white rounded-full flex items-center justify-center text-xl font-bold shadow-md">
+            <div className="space-y-6 relative">
+              {/* Visual Timeline Line */}
+              <div className="hidden md:block absolute left-7 top-8 bottom-8 w-0.5 bg-gradient-to-b from-accent via-accent/50 to-accent"></div>
+              
+              <div className="flex flex-col md:flex-row items-start gap-5 relative">
+                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-accent to-accent-dark text-white rounded-full flex items-center justify-center text-xl font-bold shadow-md z-10">
                   1
                 </div>
                 <div className="flex-1">
@@ -28,13 +31,13 @@ export default function HowItWorks() {
                     You fill out a quick form
                   </h3>
                   <p className="text-gray-700">
-                    Tell me your move-in date, address, and which utilities you need. Takes about 2 minutes.
+                    Tell me your address, which services you need help with, and any upcoming deadlines. Takes about 2 minutes.
                   </p>
                 </div>
               </div>
 
-              <div className="flex flex-col md:flex-row items-start gap-5">
-                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-accent to-accent-dark text-white rounded-full flex items-center justify-center text-xl font-bold shadow-md">
+              <div className="flex flex-col md:flex-row items-start gap-5 relative">
+                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-accent to-accent-dark text-white rounded-full flex items-center justify-center text-xl font-bold shadow-md z-10">
                   2
                 </div>
                 <div className="flex-1">
@@ -42,21 +45,21 @@ export default function HowItWorks() {
                     I handle all the annoying stuff
                   </h3>
                   <p className="text-gray-700">
-                    I&apos;ll call Austin Energy, Google Fiber, whoever you need. I&apos;ll wait on hold, fill out their forms, and get everything scheduled.
+                    I navigate the portals and coordinate with providers like Austin Energy and Google Fiber to get your new services started or your current ones optimized.
                   </p>
                 </div>
               </div>
 
-              <div className="flex flex-col md:flex-row items-start gap-5">
-                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-accent to-accent-dark text-white rounded-full flex items-center justify-center text-xl font-bold shadow-md">
+              <div className="flex flex-col md:flex-row items-start gap-5 relative">
+                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-accent to-accent-dark text-white rounded-full flex items-center justify-center text-xl font-bold shadow-md z-10">
                   3
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-primary mb-2">
-                    You move into a ready home
+                    Peace of mind, guaranteed.
                   </h3>
                   <p className="text-gray-700">
-                    Lights work. WiFi&apos;s on. Water flows. You saved 3-5 hours of phone time and didn&apos;t have to deal with any of it.
+                    You&apos;ll receive official confirmations directly from providers like Austin Energy and Google Fiber. I also share screenshots of all digital applications before they are submitted, so you remain in total control.
                   </p>
                 </div>
               </div>
@@ -67,7 +70,7 @@ export default function HowItWorks() {
                 onClick={() => setIsFormOpen(true)}
                 className="btn-primary"
               >
-                Get Free Help
+                Start My Setup
               </button>
             </div>
           </div>
