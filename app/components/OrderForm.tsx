@@ -66,12 +66,27 @@ export default function OrderForm({ isOpen, onClose, focusRealtorField = false }
     setSubmitStatus('idle');
 
     try {
+      // Prepare payload with all form data
+      const payload = {
+        clientName: formData.clientName || '',
+        email: formData.email || '',
+        phone: formData.phone || '', // Optional but always sent
+        serviceAddress: formData.serviceAddress || '',
+        moveInDate: formData.moveInDate || '',
+        realtorName: formData.realtorName || '',
+        services: formData.services,
+        message: formData.message || '', // Will be mapped to 'text' in API route
+      };
+
+      // Log payload for verification
+      console.log('📤 Sending to webhook:', payload);
+
       const response = await fetch('/api/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(payload),
       });
 
       if (!response.ok) {
