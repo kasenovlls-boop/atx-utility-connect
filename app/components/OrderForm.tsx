@@ -79,7 +79,7 @@ export default function OrderForm({ isOpen, onClose, focusRealtorField = false }
       };
 
       // Log payload for verification
-      console.log('📤 Sending to webhook:', payload);
+      console.log('📤 CLIENT: Form data being sent:', payload);
 
       const response = await fetch('/api/submit', {
         method: 'POST',
@@ -89,9 +89,16 @@ export default function OrderForm({ isOpen, onClose, focusRealtorField = false }
         body: JSON.stringify(payload),
       });
 
+      console.log('📥 CLIENT: Response status:', response.status, response.statusText);
+
       if (!response.ok) {
-        throw new Error('Submission failed');
+        const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
+        console.error('❌ CLIENT: Server error response:', errorData);
+        throw new Error(`Submission failed: ${response.status}`);
       }
+
+      const responseData = await response.json();
+      console.log('✅ CLIENT: Success response:', responseData);
 
       setSubmitStatus('success');
       // Reset form
@@ -113,7 +120,7 @@ export default function OrderForm({ isOpen, onClose, focusRealtorField = false }
         message: '',
       });
     } catch (error) {
-      console.error('Form submission error:', error);
+      console.error('❌ CLIENT: Form submission error:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);

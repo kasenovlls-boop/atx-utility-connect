@@ -3,6 +3,7 @@ import { NextResponse } from 'next/server';
 export async function POST(request: Request) {
   try {
     const data = await request.json();
+    console.log('🔍 SERVER: Received data from client:', JSON.stringify(data, null, 2));
 
     // Prepare data for webhook with exact keys for database structure
     const webhookData = {
@@ -24,7 +25,7 @@ export async function POST(request: Request) {
     };
 
     // Log final payload for verification
-    console.log('🚀 Sending to Make.com webhook:', JSON.stringify(webhookData, null, 2));
+    console.log('🚀 SERVER: Sending to Make.com webhook:', JSON.stringify(webhookData, null, 2));
 
     // Send to Make.com webhook
     const webhookUrl = 'https://hook.eu1.make.com/ov3hp14un2ry8wcex2dv6vcswe118qyt';
@@ -37,13 +38,16 @@ export async function POST(request: Request) {
       body: JSON.stringify(webhookData),
     });
 
+    console.log('📡 SERVER: Webhook response status:', webhookResponse.status, webhookResponse.statusText);
+
     if (!webhookResponse.ok) {
       const errorText = await webhookResponse.text();
-      console.error('❌ Webhook error:', errorText);
-      throw new Error('Webhook request failed');
+      console.error('❌ SERVER: Webhook error response:', errorText);
+      throw new Error(`Webhook request failed: ${webhookResponse.status}`);
     }
 
-    console.log('✅ Webhook responded successfully');
+    const webhookResponseData = await webhookResponse.text();
+    console.log('✅ SERVER: Webhook success response:', webhookResponseData);
 
     return NextResponse.json({ 
       success: true, 
@@ -51,7 +55,7 @@ export async function POST(request: Request) {
     });
 
   } catch (error) {
-    console.error('❌ API Error:', error);
+    console.error('❌ SERVER: API Error:', error);
     return NextResponse.json(
       { success: false, error: 'Failed to submit form' },
       { status: 500 }
