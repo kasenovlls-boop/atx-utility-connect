@@ -27,7 +27,7 @@ export async function POST(request: Request) {
     console.log('🚀 Sending to Make.com webhook:', JSON.stringify(webhookData, null, 2));
 
     // Send to Make.com webhook
-    const webhookUrl = 'https://hook.eu1.make.com/2fjmt1n9kcqxf3r6lu9wudqmn4i9cxxi';
+    const webhookUrl = 'https://hook.eu1.make.com/ov3hp14un2ry8wcex2dv6vcswe118qyt';
     
     const webhookResponse = await fetch(webhookUrl, {
       method: 'POST',
